@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% @posts.each do |post_instance| %>
+      <h1><%=post_instance.name%></h1>
+      <p><%= post_instance.content %></p>
+      <p><%= post_instance.id %></p>
+    <% end %>
+  </body>
+</html>
